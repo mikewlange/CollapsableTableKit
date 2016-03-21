@@ -9,7 +9,7 @@ Collapsable Table Kit
 
 A table view comprised of x sections, all of which can collapse or expand like an accordion, when tapping the section header. The creative design and style of the table view and it's headers, are at the mercy of the implementing developer.
 
-Please contribute to pre-built table view designs, [here](https://github.com/rob-nash/CollapsableTable).
+Please contribute to pre-built table view designs [here](https://github.com/rob-nash/CollapsableOptions).
 
 ## Installation with Carthage
 Add the following to your Cartfile. See [Carthage](https://github.com/Carthage/Carthage) for details.
@@ -23,7 +23,7 @@ After running Carthage, add the following framework to your project, as an embed
 You may need to add a framework search path to your build settings that points at the carthage build folder.
 
 ##Demo
-Try the Demo by running the 'Example' scheme.
+Try the Demo by running the 'Example' scheme. There are many other example implementations [here](https://github.com/rob-nash/CollapsableOptions)
 
 ## Usage
 1. Build a UITableView, either in code or from interface builder.
