@@ -22,9 +22,6 @@ After running Carthage, add the following framework to your project, as an embed
 
 You may need to add a framework search path to your build settings that points at the carthage build folder.
 
-##Demo
-Try the Demo by running the 'Example' scheme. There are many other example implementations [here](https://github.com/rob-nash/CollapsableOptions)
-
 ## Usage
 1. Build a UITableView, either in code or from interface builder.
 2. Subclass UITableViewHeaderFooterView and conform to the RRNCollapsableSectionHeader Protocol. Create a nib for this subclass.
