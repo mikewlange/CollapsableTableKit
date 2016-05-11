@@ -11,7 +11,7 @@
 #import "FakeModelBuilder.h"
 
 @interface ViewController ()
-@property (strong, nonatomic) NSArray <RRNCollapsableTableViewSectionModelProtocol> *menu;
+@property (strong, nonatomic) NSArray <RRNCollapsableTableViewSectionModelProtocol> *customModel;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
 
@@ -31,17 +31,17 @@
     return YES;
 }
 
-#pragma mark - Menu
+#pragma mark - CustomModel
 
--(NSArray <RRNCollapsableTableViewSectionModelProtocol> *)menu {
-    if (_menu == nil) {
-        _menu = (NSArray <RRNCollapsableTableViewSectionModelProtocol> *)[FakeModelBuilder buildMenu];
+-(NSArray <RRNCollapsableTableViewSectionModelProtocol> *)customModel {
+    if (_customModel == nil) {
+        _customModel = (NSArray <RRNCollapsableTableViewSectionModelProtocol> *)[FakeModelBuilder buildModel];
     }
-    return _menu;
+    return _customModel;
 }
 
 -(NSArray <RRNCollapsableTableViewSectionModelProtocol> *)model {
-    return self.menu;
+    return self.customModel;
 }
 
 #pragma mark - UITableView
@@ -51,15 +51,15 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return [MenuSectionHeaderView minimumHeight];
+    return 44.0;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-//    id <RRNCollapsableTableViewSectionModelProtocol> mSection = self.menu[indexPath.section];
-//    id item = mSection.items[indexPath.row];
-    
-    return [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    id <RRNCollapsableTableViewSectionModelProtocol> modelSection = self.customModel[indexPath.section];
+    NSString *title = modelSection.items[indexPath.row];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    cell.textLabel.text = title;
+    return cell;
 }
 
 @end

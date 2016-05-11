@@ -1,7 +1,7 @@
 /**
- *  CollapsableTable - Collapsable table view sections with custom section header views.
+ *  CollapsableTableKit - Collapsable table view sections with custom section header views.
  *
- *  CollapsableTable.h
+ *  CollapsableTableKit.h
  *
  *  For usage, see documentation of the classes/symbols listed in this file.
  *
