@@ -11,16 +11,13 @@ A table view comprised of x sections, all of which can collapse or expand like a
 
 Please contribute to pre-built table view designs [here](https://github.com/rob-nash/CollapsableOptions).
 
-## Installation with Carthage
-Add the following to your Cartfile. See [Carthage](https://github.com/Carthage/Carthage) for details.
+### Installation
+#### [Carthage](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application)
+Add the following to your Cartfile:
 
-* github "https://github.com/rob-nash/CollapsableTableKit" >= 1.0.0
-
-After running Carthage, add the following framework to your project, as an embedded frameworks. See [Carthage](https://github.com/Carthage/Carthage) for details.
-
-* CollapsableTableKit.framework
-
-You may need to add a framework search path to your build settings that points at the carthage build folder.
+```ogdl
+github "rob-nash/CollapsableTableKit"
+```
 
 ## Usage
 1. Build a UITableView, either in code or from interface builder.
