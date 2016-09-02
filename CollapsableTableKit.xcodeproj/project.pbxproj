@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5014C7231D7952D4000322FE /* RRNTableViewHeaderFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5014C7211D7952D4000322FE /* RRNTableViewHeaderFooterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5014C7241D7952D4000322FE /* RRNTableViewHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5014C7221D7952D4000322FE /* RRNTableViewHeaderFooterView.m */; };
 		503D30251C9DCAE50001FF90 /* CollapsableTableKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 503D30241C9DCAE50001FF90 /* CollapsableTableKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		503D302C1C9DCAE60001FF90 /* CollapsableTableKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503D30211C9DCAE50001FF90 /* CollapsableTableKit.framework */; };
 		503D30311C9DCAE60001FF90 /* CollapsableTableKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D30301C9DCAE60001FF90 /* CollapsableTableKitTests.m */; };
 		503D303F1C9DCB000001FF90 /* RRNCollapsableTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 503D303B1C9DCB000001FF90 /* RRNCollapsableTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		503D30401C9DCB000001FF90 /* RRNCollapsableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D303C1C9DCB000001FF90 /* RRNCollapsableTableViewController.m */; };
-		503D30411C9DCB000001FF90 /* RRNCollapsableTableViewSectionHeaderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 503D303D1C9DCB000001FF90 /* RRNCollapsableTableViewSectionHeaderProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		503D30421C9DCB000001FF90 /* RRNCollapsableTableViewSectionModelProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 503D303E1C9DCB000001FF90 /* RRNCollapsableTableViewSectionModelProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		503D304B1C9DCB620001FF90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D304A1C9DCB620001FF90 /* main.m */; };
 		503D304E1C9DCB620001FF90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D304D1C9DCB620001FF90 /* AppDelegate.m */; };
 		503D30511C9DCB620001FF90 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D30501C9DCB620001FF90 /* ViewController.m */; };
@@ -54,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5014C7211D7952D4000322FE /* RRNTableViewHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRNTableViewHeaderFooterView.h; sourceTree = "<group>"; };
+		5014C7221D7952D4000322FE /* RRNTableViewHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRNTableViewHeaderFooterView.m; sourceTree = "<group>"; };
 		503D30211C9DCAE50001FF90 /* CollapsableTableKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CollapsableTableKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		503D30241C9DCAE50001FF90 /* CollapsableTableKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollapsableTableKit.h; sourceTree = "<group>"; };
 		503D30261C9DCAE50001FF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,8 +64,6 @@
 		503D30321C9DCAE60001FF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503D303B1C9DCB000001FF90 /* RRNCollapsableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRNCollapsableTableViewController.h; sourceTree = "<group>"; };
 		503D303C1C9DCB000001FF90 /* RRNCollapsableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRNCollapsableTableViewController.m; sourceTree = "<group>"; };
-		503D303D1C9DCB000001FF90 /* RRNCollapsableTableViewSectionHeaderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRNCollapsableTableViewSectionHeaderProtocol.h; sourceTree = "<group>"; };
-		503D303E1C9DCB000001FF90 /* RRNCollapsableTableViewSectionModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRNCollapsableTableViewSectionModelProtocol.h; sourceTree = "<group>"; };
 		503D30471C9DCB620001FF90 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		503D304A1C9DCB620001FF90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		503D304C1C9DCB620001FF90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -155,8 +155,8 @@
 				503D30241C9DCAE50001FF90 /* CollapsableTableKit.h */,
 				503D303B1C9DCB000001FF90 /* RRNCollapsableTableViewController.h */,
 				503D303C1C9DCB000001FF90 /* RRNCollapsableTableViewController.m */,
-				503D303D1C9DCB000001FF90 /* RRNCollapsableTableViewSectionHeaderProtocol.h */,
-				503D303E1C9DCB000001FF90 /* RRNCollapsableTableViewSectionModelProtocol.h */,
+				5014C7211D7952D4000322FE /* RRNTableViewHeaderFooterView.h */,
+				5014C7221D7952D4000322FE /* RRNTableViewHeaderFooterView.m */,
 				503D30261C9DCAE50001FF90 /* Info.plist */,
 			);
 			path = CollapsableTableKit;
@@ -239,10 +239,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5014C7231D7952D4000322FE /* RRNTableViewHeaderFooterView.h in Headers */,
 				503D30251C9DCAE50001FF90 /* CollapsableTableKit.h in Headers */,
-				503D30411C9DCB000001FF90 /* RRNCollapsableTableViewSectionHeaderProtocol.h in Headers */,
 				503D303F1C9DCB000001FF90 /* RRNCollapsableTableViewController.h in Headers */,
-				503D30421C9DCB000001FF90 /* RRNCollapsableTableViewSectionModelProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +348,7 @@
 				TargetAttributes = {
 					503D30201C9DCAE50001FF90 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = ZZE5UCZP8U;
 					};
 					503D302A1C9DCAE60001FF90 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -436,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				503D30401C9DCB000001FF90 /* RRNCollapsableTableViewController.m in Sources */,
+				5014C7241D7952D4000322FE /* RRNTableViewHeaderFooterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,6 +610,8 @@
 		503D30361C9DCAE60001FF90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -619,6 +622,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robertnash.CollapsableTableKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -626,6 +630,8 @@
 		503D30371C9DCAE60001FF90 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -636,6 +642,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robertnash.CollapsableTableKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

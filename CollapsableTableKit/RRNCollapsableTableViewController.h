@@ -26,8 +26,13 @@
  *  SOFTWARE.
  */
 
-#import "RRNCollapsableTableViewSectionHeaderProtocol.h"
-#import "RRNCollapsableTableViewSectionModelProtocol.h"
+#import "RRNTableViewHeaderFooterView.h"
+
+@protocol RRNCollapsableTableViewSectionModelProtocol <NSObject>
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, strong) NSNumber *isVisible;
+@property (nonatomic, strong) NSArray *items;
+@end
 
 @interface RRNCollapsableTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
@@ -44,7 +49,7 @@
 -(NSArray <RRNCollapsableTableViewSectionModelProtocol> *)model;
 
 /*!
- * @discussion Override this method to return the nib name of your UITableViewHeaderFooterView subclass.
+ * @discussion Override this method to return the nib name of your RRNTableViewHeaderFooterView subclass.
  * @return the section header nib name. Is nil unless overriden.
  */
 -(NSString *)sectionHeaderNibName;

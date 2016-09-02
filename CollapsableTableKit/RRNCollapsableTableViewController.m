@@ -28,7 +28,7 @@
 
 #import "RRNCollapsableTableViewController.h"
 
-@interface RRNCollapsableTableViewController () <RRNCollapsableTableViewSectionHeaderInteractionProtocol>
+@interface RRNCollapsableTableViewController () <RRNCollapsableTableViewSectionHeaderInteractionDelegate>
 @end
 
 @implementation RRNCollapsableTableViewController
@@ -76,14 +76,10 @@
     
     id menuSection = [[self model] objectAtIndex:section];
     
-    UITableViewHeaderFooterView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[self sectionHeaderReuseIdentifier]];
+    RRNTableViewHeaderFooterView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[self sectionHeaderReuseIdentifier]];
+    view.interactionDelegate = self;
     
     BOOL headerConforms = [view conformsToProtocol:@protocol(RRNCollapsableTableViewSectionHeaderProtocol)];
-    
-    if (headerConforms) {
-        ((id <RRNCollapsableTableViewSectionHeaderProtocol>)view).interactionDelegate = self;
-    }
-    
     BOOL itemConforms = [menuSection conformsToProtocol:@protocol(RRNCollapsableTableViewSectionModelProtocol)];
     
     if (headerConforms && itemConforms) {

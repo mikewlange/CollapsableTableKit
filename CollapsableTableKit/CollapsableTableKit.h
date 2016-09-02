@@ -26,9 +26,6 @@
  *  SOFTWARE.
  */
 
-#import <UIKit/UIKit.h>
-#import <CollapsableTableKit/RRNCollapsableTableViewSectionHeaderProtocol.h>
-#import <CollapsableTableKit/RRNCollapsableTableViewSectionModelProtocol.h>
 #import <CollapsableTableKit/RRNCollapsableTableViewController.h>
 
 //! Project version number for CollapsableTableKit.
