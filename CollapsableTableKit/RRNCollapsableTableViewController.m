@@ -27,14 +27,14 @@
  */
 
 #import "RRNCollapsableTableViewController.h"
-
-@interface RRNCollapsableTableViewController () <RRNCollapsableTableViewSectionHeaderInteractionDelegate>
-@end
+#import "RRNConstants.h"
 
 @implementation RRNCollapsableTableViewController
 
 -(void)viewDidLoad {
     [super viewDidLoad];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userTappedHeaderView:) name:RRN_CONSTANT_NOTIFICATION_USER_TAPPED_TABLE_VIEW_HEADER_VIEW object:nil];
     
     UINib *nib = [UINib nibWithNibName:[self sectionHeaderNibName] bundle:nil];
     [[self collapsableTableView] registerNib:nib forHeaderFooterViewReuseIdentifier:[self sectionHeaderReuseIdentifier]];
@@ -73,33 +73,18 @@
 }
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    
     id menuSection = [[self model] objectAtIndex:section];
-    
     RRNTableViewHeaderFooterView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[self sectionHeaderReuseIdentifier]];
-    view.interactionDelegate = self;
-    
-    BOOL headerConforms = [view conformsToProtocol:@protocol(RRNCollapsableTableViewSectionHeaderProtocol)];
-    BOOL itemConforms = [menuSection conformsToProtocol:@protocol(RRNCollapsableTableViewSectionModelProtocol)];
-    
-    if (headerConforms && itemConforms) {
-        ((id <RRNCollapsableTableViewSectionHeaderProtocol>)view).titleLabel.text = ((id <RRNCollapsableTableViewSectionModelProtocol>)menuSection).title;
-    }
-    
+    [view updateTitle:((id <RRNCollapsableTableViewSectionModelProtocol>)menuSection).title];
     return view;
 }
 
 -(void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
-    
     id menuSection = [[self model] objectAtIndex:section];
-    
-    BOOL headerConforms = [view conformsToProtocol:@protocol(RRNCollapsableTableViewSectionHeaderProtocol)];
-    BOOL itemConforms = [menuSection conformsToProtocol:@protocol(RRNCollapsableTableViewSectionModelProtocol)];
-    
-    if (headerConforms && itemConforms && ((id <RRNCollapsableTableViewSectionModelProtocol>)menuSection).isVisible.boolValue) {
-        [((id <RRNCollapsableTableViewSectionHeaderProtocol>)view) openAnimated:NO];
-    } else if (headerConforms) {
-        [((id <RRNCollapsableTableViewSectionHeaderProtocol>)view) closeAnimated:NO];
+    if (((id <RRNCollapsableTableViewSectionModelProtocol>)menuSection).isVisible.boolValue) {
+        [((RRNTableViewHeaderFooterView*)view) openAnimated:NO];
+    } else {
+        [((RRNTableViewHeaderFooterView*)view) closeAnimated:NO];
     }
 }
 
@@ -107,9 +92,16 @@
     return nil;
 }
 
-#pragma mark - RRNCollapsableTableViewSectionHeaderProtocol
+#pragma mark - User Interaction
 
--(void)userTappedView:(UITableViewHeaderFooterView <RRNCollapsableTableViewSectionHeaderProtocol> *)view atPoint:(CGPoint)point {
+-(void)userTappedHeaderView:(NSNotification *)notification {
+    RRNTableViewHeaderFooterView *view = (RRNTableViewHeaderFooterView *)notification.object;
+    NSValue *value = notification.userInfo[RRN_CONSTANT_USER_TAPPED_TABLE_VIEW_HEADER_VIEW_AT_POINT_KEY];
+    CGPoint point = value.CGPointValue;
+    [self userTappedView:view atPoint:point];
+}
+
+-(void)userTappedView:(RRNTableViewHeaderFooterView *)view atPoint:(CGPoint)point {
     
     UITableView *tableView = [self collapsableTableView];
     
@@ -155,8 +147,7 @@
             
             NSInteger untappedSection = [menu indexOfObject:menuSection];
             
-            UITableViewHeaderFooterView <RRNCollapsableTableViewSectionHeaderProtocol> *untappedHeaderFooterView = [self headerViewInTableView:tableView
-                                                                                                                                    forSection:untappedSection];
+            RRNTableViewHeaderFooterView *untappedHeaderFooterView = (RRNTableViewHeaderFooterView *)[tableView headerViewForSection:untappedSection];
             
             [self toggleCollapseTableViewSectionAtSection:untappedSection
                                                 withModel:menuSection
@@ -186,24 +177,11 @@
     return nil;
 }
 
--(UITableViewHeaderFooterView <RRNCollapsableTableViewSectionHeaderProtocol> *)headerViewInTableView:(UITableView *)tableView forSection:(NSUInteger)section {
-    
-    UITableViewHeaderFooterView <RRNCollapsableTableViewSectionHeaderProtocol> *returnValue;
-    
-    UITableViewHeaderFooterView *headerFooterView = [tableView headerViewForSection:section];
-    
-    if ([headerFooterView conformsToProtocol:@protocol(RRNCollapsableTableViewSectionHeaderProtocol)]) {
-        returnValue = (UITableViewHeaderFooterView <RRNCollapsableTableViewSectionHeaderProtocol> *)headerFooterView;
-    }
-    
-    return returnValue;
-}
-
 -(void)toggleCollapseTableViewSectionAtSection:(NSUInteger)section
                                      withModel:(id <RRNCollapsableTableViewSectionModelProtocol>)model
                                    inTableView:(UITableView *)tableView
                              usingRowAnimation:(UITableViewRowAnimation)animation
-                forSectionWithHeaderFooterView:(UITableViewHeaderFooterView <RRNCollapsableTableViewSectionHeaderProtocol> *)headerFooterView {
+                forSectionWithHeaderFooterView:(RRNTableViewHeaderFooterView *)headerFooterView {
     
     NSArray *indexPaths = [self indexPathsForSection:section
                                       forMenuSection:model];

@@ -56,6 +56,7 @@
 /* Begin PBXFileReference section */
 		5014C7211D7952D4000322FE /* RRNTableViewHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRNTableViewHeaderFooterView.h; sourceTree = "<group>"; };
 		5014C7221D7952D4000322FE /* RRNTableViewHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRNTableViewHeaderFooterView.m; sourceTree = "<group>"; };
+		5014C7251D79683D000322FE /* RRNConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRNConstants.h; sourceTree = "<group>"; };
 		503D30211C9DCAE50001FF90 /* CollapsableTableKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CollapsableTableKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		503D30241C9DCAE50001FF90 /* CollapsableTableKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollapsableTableKit.h; sourceTree = "<group>"; };
 		503D30261C9DCAE50001FF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -157,6 +158,7 @@
 				503D303C1C9DCB000001FF90 /* RRNCollapsableTableViewController.m */,
 				5014C7211D7952D4000322FE /* RRNTableViewHeaderFooterView.h */,
 				5014C7221D7952D4000322FE /* RRNTableViewHeaderFooterView.m */,
+				5014C7251D79683D000322FE /* RRNConstants.h */,
 				503D30261C9DCAE50001FF90 /* Info.plist */,
 			);
 			path = CollapsableTableKit;
