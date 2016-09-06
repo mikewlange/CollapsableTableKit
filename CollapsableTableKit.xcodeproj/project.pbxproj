@@ -10,48 +10,9 @@
 		5014C7231D7952D4000322FE /* RRNTableViewHeaderFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5014C7211D7952D4000322FE /* RRNTableViewHeaderFooterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5014C7241D7952D4000322FE /* RRNTableViewHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5014C7221D7952D4000322FE /* RRNTableViewHeaderFooterView.m */; };
 		503D30251C9DCAE50001FF90 /* CollapsableTableKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 503D30241C9DCAE50001FF90 /* CollapsableTableKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		503D302C1C9DCAE60001FF90 /* CollapsableTableKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503D30211C9DCAE50001FF90 /* CollapsableTableKit.framework */; };
-		503D30311C9DCAE60001FF90 /* CollapsableTableKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D30301C9DCAE60001FF90 /* CollapsableTableKitTests.m */; };
 		503D303F1C9DCB000001FF90 /* RRNCollapsableTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 503D303B1C9DCB000001FF90 /* RRNCollapsableTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		503D30401C9DCB000001FF90 /* RRNCollapsableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D303C1C9DCB000001FF90 /* RRNCollapsableTableViewController.m */; };
-		503D304B1C9DCB620001FF90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D304A1C9DCB620001FF90 /* main.m */; };
-		503D304E1C9DCB620001FF90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D304D1C9DCB620001FF90 /* AppDelegate.m */; };
-		503D30511C9DCB620001FF90 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D30501C9DCB620001FF90 /* ViewController.m */; };
-		503D30541C9DCB620001FF90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503D30521C9DCB620001FF90 /* Main.storyboard */; };
-		503D30561C9DCB620001FF90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503D30551C9DCB620001FF90 /* Assets.xcassets */; };
-		503D30641C9DCB620001FF90 /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D30631C9DCB620001FF90 /* ExampleTests.m */; };
-		503D306F1C9DCB620001FF90 /* ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D306E1C9DCB620001FF90 /* ExampleUITests.m */; };
-		503D30821C9DCBC70001FF90 /* FakeModelBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D307C1C9DCBC70001FF90 /* FakeModelBuilder.m */; };
-		503D30831C9DCBC70001FF90 /* MenuSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D307E1C9DCBC70001FF90 /* MenuSection.m */; };
-		503D30841C9DCBC70001FF90 /* MenuSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D30801C9DCBC70001FF90 /* MenuSectionHeaderView.m */; };
-		503D30851C9DCBC70001FF90 /* MenuSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 503D30811C9DCBC70001FF90 /* MenuSectionHeaderView.xib */; };
-		503D30861C9DCBD00001FF90 /* RRNCollapsableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 503D303C1C9DCB000001FF90 /* RRNCollapsableTableViewController.m */; };
-		503D30891C9DCCB70001FF90 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503D30871C9DCCB70001FF90 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		503D302D1C9DCAE60001FF90 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 503D30181C9DCAE50001FF90 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 503D30201C9DCAE50001FF90;
-			remoteInfo = CollapsableTableKit;
-		};
-		503D30601C9DCB620001FF90 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 503D30181C9DCAE50001FF90 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 503D30461C9DCB620001FF90;
-			remoteInfo = Example;
-		};
-		503D306B1C9DCB620001FF90 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 503D30181C9DCAE50001FF90 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 503D30461C9DCB620001FF90;
-			remoteInfo = Example;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5014C7211D7952D4000322FE /* RRNTableViewHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRNTableViewHeaderFooterView.h; sourceTree = "<group>"; };
@@ -60,67 +21,12 @@
 		503D30211C9DCAE50001FF90 /* CollapsableTableKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CollapsableTableKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		503D30241C9DCAE50001FF90 /* CollapsableTableKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollapsableTableKit.h; sourceTree = "<group>"; };
 		503D30261C9DCAE50001FF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		503D302B1C9DCAE60001FF90 /* CollapsableTableKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollapsableTableKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		503D30301C9DCAE60001FF90 /* CollapsableTableKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollapsableTableKitTests.m; sourceTree = "<group>"; };
-		503D30321C9DCAE60001FF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503D303B1C9DCB000001FF90 /* RRNCollapsableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRNCollapsableTableViewController.h; sourceTree = "<group>"; };
 		503D303C1C9DCB000001FF90 /* RRNCollapsableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRNCollapsableTableViewController.m; sourceTree = "<group>"; };
-		503D30471C9DCB620001FF90 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		503D304A1C9DCB620001FF90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		503D304C1C9DCB620001FF90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		503D304D1C9DCB620001FF90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		503D304F1C9DCB620001FF90 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		503D30501C9DCB620001FF90 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		503D30531C9DCB620001FF90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		503D30551C9DCB620001FF90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		503D305A1C9DCB620001FF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		503D305F1C9DCB620001FF90 /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		503D30631C9DCB620001FF90 /* ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleTests.m; sourceTree = "<group>"; };
-		503D30651C9DCB620001FF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		503D306A1C9DCB620001FF90 /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		503D306E1C9DCB620001FF90 /* ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleUITests.m; sourceTree = "<group>"; };
-		503D30701C9DCB620001FF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		503D307B1C9DCBC70001FF90 /* FakeModelBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeModelBuilder.h; sourceTree = "<group>"; };
-		503D307C1C9DCBC70001FF90 /* FakeModelBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeModelBuilder.m; sourceTree = "<group>"; };
-		503D307D1C9DCBC70001FF90 /* MenuSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuSection.h; sourceTree = "<group>"; };
-		503D307E1C9DCBC70001FF90 /* MenuSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuSection.m; sourceTree = "<group>"; };
-		503D307F1C9DCBC70001FF90 /* MenuSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuSectionHeaderView.h; sourceTree = "<group>"; };
-		503D30801C9DCBC70001FF90 /* MenuSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuSectionHeaderView.m; sourceTree = "<group>"; };
-		503D30811C9DCBC70001FF90 /* MenuSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuSectionHeaderView.xib; sourceTree = "<group>"; };
-		503D30881C9DCCB70001FF90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Example/Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		503D301D1C9DCAE50001FF90 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		503D30281C9DCAE60001FF90 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				503D302C1C9DCAE60001FF90 /* CollapsableTableKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		503D30441C9DCB620001FF90 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		503D305C1C9DCB620001FF90 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		503D30671C9DCB620001FF90 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -133,7 +39,7 @@
 		503D30171C9DCAE50001FF90 = {
 			isa = PBXGroup;
 			children = (
-				503D307A1C9DCB690001FF90 /* Targets */,
+				503D30231C9DCAE50001FF90 /* CollapsableTableKit */,
 				503D30221C9DCAE50001FF90 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -142,10 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				503D30211C9DCAE50001FF90 /* CollapsableTableKit.framework */,
-				503D302B1C9DCAE60001FF90 /* CollapsableTableKitTests.xctest */,
-				503D30471C9DCB620001FF90 /* Example.app */,
-				503D305F1C9DCB620001FF90 /* ExampleTests.xctest */,
-				503D306A1C9DCB620001FF90 /* ExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,76 +64,6 @@
 				503D30261C9DCAE50001FF90 /* Info.plist */,
 			);
 			path = CollapsableTableKit;
-			sourceTree = "<group>";
-		};
-		503D302F1C9DCAE60001FF90 /* CollapsableTableKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				503D30301C9DCAE60001FF90 /* CollapsableTableKitTests.m */,
-				503D30321C9DCAE60001FF90 /* Info.plist */,
-			);
-			path = CollapsableTableKitTests;
-			sourceTree = "<group>";
-		};
-		503D30481C9DCB620001FF90 /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				503D304C1C9DCB620001FF90 /* AppDelegate.h */,
-				503D304D1C9DCB620001FF90 /* AppDelegate.m */,
-				503D307B1C9DCBC70001FF90 /* FakeModelBuilder.h */,
-				503D307C1C9DCBC70001FF90 /* FakeModelBuilder.m */,
-				503D307D1C9DCBC70001FF90 /* MenuSection.h */,
-				503D307E1C9DCBC70001FF90 /* MenuSection.m */,
-				503D307F1C9DCBC70001FF90 /* MenuSectionHeaderView.h */,
-				503D30801C9DCBC70001FF90 /* MenuSectionHeaderView.m */,
-				503D30811C9DCBC70001FF90 /* MenuSectionHeaderView.xib */,
-				503D304F1C9DCB620001FF90 /* ViewController.h */,
-				503D30501C9DCB620001FF90 /* ViewController.m */,
-				503D30871C9DCCB70001FF90 /* Launch Screen.storyboard */,
-				503D30521C9DCB620001FF90 /* Main.storyboard */,
-				503D30551C9DCB620001FF90 /* Assets.xcassets */,
-				503D305A1C9DCB620001FF90 /* Info.plist */,
-				503D30491C9DCB620001FF90 /* Supporting Files */,
-			);
-			path = Example;
-			sourceTree = "<group>";
-		};
-		503D30491C9DCB620001FF90 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				503D304A1C9DCB620001FF90 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		503D30621C9DCB620001FF90 /* ExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				503D30631C9DCB620001FF90 /* ExampleTests.m */,
-				503D30651C9DCB620001FF90 /* Info.plist */,
-			);
-			path = ExampleTests;
-			sourceTree = "<group>";
-		};
-		503D306D1C9DCB620001FF90 /* ExampleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				503D306E1C9DCB620001FF90 /* ExampleUITests.m */,
-				503D30701C9DCB620001FF90 /* Info.plist */,
-			);
-			path = ExampleUITests;
-			sourceTree = "<group>";
-		};
-		503D307A1C9DCB690001FF90 /* Targets */ = {
-			isa = PBXGroup;
-			children = (
-				503D30231C9DCAE50001FF90 /* CollapsableTableKit */,
-				503D302F1C9DCAE60001FF90 /* CollapsableTableKitTests */,
-				503D30481C9DCB620001FF90 /* Example */,
-				503D30621C9DCB620001FF90 /* ExampleTests */,
-				503D306D1C9DCB620001FF90 /* ExampleUITests */,
-			);
-			name = Targets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,77 +100,6 @@
 			productReference = 503D30211C9DCAE50001FF90 /* CollapsableTableKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		503D302A1C9DCAE60001FF90 /* CollapsableTableKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 503D30381C9DCAE60001FF90 /* Build configuration list for PBXNativeTarget "CollapsableTableKitTests" */;
-			buildPhases = (
-				503D30271C9DCAE60001FF90 /* Sources */,
-				503D30281C9DCAE60001FF90 /* Frameworks */,
-				503D30291C9DCAE60001FF90 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				503D302E1C9DCAE60001FF90 /* PBXTargetDependency */,
-			);
-			name = CollapsableTableKitTests;
-			productName = CollapsableTableKitTests;
-			productReference = 503D302B1C9DCAE60001FF90 /* CollapsableTableKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		503D30461C9DCB620001FF90 /* Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 503D30711C9DCB620001FF90 /* Build configuration list for PBXNativeTarget "Example" */;
-			buildPhases = (
-				503D30431C9DCB620001FF90 /* Sources */,
-				503D30441C9DCB620001FF90 /* Frameworks */,
-				503D30451C9DCB620001FF90 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Example;
-			productName = Example;
-			productReference = 503D30471C9DCB620001FF90 /* Example.app */;
-			productType = "com.apple.product-type.application";
-		};
-		503D305E1C9DCB620001FF90 /* ExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 503D30741C9DCB620001FF90 /* Build configuration list for PBXNativeTarget "ExampleTests" */;
-			buildPhases = (
-				503D305B1C9DCB620001FF90 /* Sources */,
-				503D305C1C9DCB620001FF90 /* Frameworks */,
-				503D305D1C9DCB620001FF90 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				503D30611C9DCB620001FF90 /* PBXTargetDependency */,
-			);
-			name = ExampleTests;
-			productName = ExampleTests;
-			productReference = 503D305F1C9DCB620001FF90 /* ExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		503D30691C9DCB620001FF90 /* ExampleUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 503D30771C9DCB620001FF90 /* Build configuration list for PBXNativeTarget "ExampleUITests" */;
-			buildPhases = (
-				503D30661C9DCB620001FF90 /* Sources */,
-				503D30671C9DCB620001FF90 /* Frameworks */,
-				503D30681C9DCB620001FF90 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				503D306C1C9DCB620001FF90 /* PBXTargetDependency */,
-			);
-			name = ExampleUITests;
-			productName = ExampleUITests;
-			productReference = 503D306A1C9DCB620001FF90 /* ExampleUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -351,20 +112,6 @@
 					503D30201C9DCAE50001FF90 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = ZZE5UCZP8U;
-					};
-					503D302A1C9DCAE60001FF90 = {
-						CreatedOnToolsVersion = 7.2.1;
-					};
-					503D30461C9DCB620001FF90 = {
-						CreatedOnToolsVersion = 7.2.1;
-					};
-					503D305E1C9DCB620001FF90 = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = 503D30461C9DCB620001FF90;
-					};
-					503D30691C9DCB620001FF90 = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = 503D30461C9DCB620001FF90;
 					};
 				};
 			};
@@ -382,48 +129,12 @@
 			projectRoot = "";
 			targets = (
 				503D30201C9DCAE50001FF90 /* CollapsableTableKit */,
-				503D302A1C9DCAE60001FF90 /* CollapsableTableKitTests */,
-				503D30461C9DCB620001FF90 /* Example */,
-				503D305E1C9DCB620001FF90 /* ExampleTests */,
-				503D30691C9DCB620001FF90 /* ExampleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		503D301F1C9DCAE50001FF90 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		503D30291C9DCAE60001FF90 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		503D30451C9DCB620001FF90 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				503D30851C9DCBC70001FF90 /* MenuSectionHeaderView.xib in Resources */,
-				503D30561C9DCB620001FF90 /* Assets.xcassets in Resources */,
-				503D30891C9DCCB70001FF90 /* Launch Screen.storyboard in Resources */,
-				503D30541C9DCB620001FF90 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		503D305D1C9DCB620001FF90 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		503D30681C9DCB620001FF90 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -442,83 +153,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		503D30271C9DCAE60001FF90 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				503D30311C9DCAE60001FF90 /* CollapsableTableKitTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		503D30431C9DCB620001FF90 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				503D30831C9DCBC70001FF90 /* MenuSection.m in Sources */,
-				503D30861C9DCBD00001FF90 /* RRNCollapsableTableViewController.m in Sources */,
-				503D30821C9DCBC70001FF90 /* FakeModelBuilder.m in Sources */,
-				503D30841C9DCBC70001FF90 /* MenuSectionHeaderView.m in Sources */,
-				503D30511C9DCB620001FF90 /* ViewController.m in Sources */,
-				503D304E1C9DCB620001FF90 /* AppDelegate.m in Sources */,
-				503D304B1C9DCB620001FF90 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		503D305B1C9DCB620001FF90 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				503D30641C9DCB620001FF90 /* ExampleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		503D30661C9DCB620001FF90 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				503D306F1C9DCB620001FF90 /* ExampleUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		503D302E1C9DCAE60001FF90 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 503D30201C9DCAE50001FF90 /* CollapsableTableKit */;
-			targetProxy = 503D302D1C9DCAE60001FF90 /* PBXContainerItemProxy */;
-		};
-		503D30611C9DCB620001FF90 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 503D30461C9DCB620001FF90 /* Example */;
-			targetProxy = 503D30601C9DCB620001FF90 /* PBXContainerItemProxy */;
-		};
-		503D306C1C9DCB620001FF90 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 503D30461C9DCB620001FF90 /* Example */;
-			targetProxy = 503D306B1C9DCB620001FF90 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		503D30521C9DCB620001FF90 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				503D30531C9DCB620001FF90 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		503D30871C9DCCB70001FF90 /* Launch Screen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				503D30881C9DCCB70001FF90 /* Base */,
-			);
-			name = "Launch Screen.storyboard";
-			path = ..;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		503D30331C9DCAE60001FF90 /* Debug */ = {
@@ -649,96 +284,6 @@
 			};
 			name = Release;
 		};
-		503D30391C9DCAE60001FF90 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = CollapsableTableKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.robertnash.CollapsableTableKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		503D303A1C9DCAE60001FF90 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = CollapsableTableKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.robertnash.CollapsableTableKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		503D30721C9DCB620001FF90 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Example/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.robertnash.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		503D30731C9DCB620001FF90 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Example/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.robertnash.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		503D30751C9DCB620001FF90 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.robertnash.ExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
-			};
-			name = Debug;
-		};
-		503D30761C9DCB620001FF90 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.robertnash.ExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
-			};
-			name = Release;
-		};
-		503D30781C9DCB620001FF90 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ExampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.robertnash.ExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Example;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		503D30791C9DCB620001FF90 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ExampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.robertnash.ExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Example;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -756,42 +301,6 @@
 			buildConfigurations = (
 				503D30361C9DCAE60001FF90 /* Debug */,
 				503D30371C9DCAE60001FF90 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		503D30381C9DCAE60001FF90 /* Build configuration list for PBXNativeTarget "CollapsableTableKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				503D30391C9DCAE60001FF90 /* Debug */,
-				503D303A1C9DCAE60001FF90 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		503D30711C9DCB620001FF90 /* Build configuration list for PBXNativeTarget "Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				503D30721C9DCB620001FF90 /* Debug */,
-				503D30731C9DCB620001FF90 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		503D30741C9DCB620001FF90 /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				503D30751C9DCB620001FF90 /* Debug */,
-				503D30761C9DCB620001FF90 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		503D30771C9DCB620001FF90 /* Build configuration list for PBXNativeTarget "ExampleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				503D30781C9DCB620001FF90 /* Debug */,
-				503D30791C9DCB620001FF90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
