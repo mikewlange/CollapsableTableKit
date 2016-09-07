@@ -26,7 +26,7 @@
  *  SOFTWARE.
  */
 
-#import <CollapsableTableKit/RRNCollapsableTableViewController.h>
+#import <UIKit/UIKit.h>
 
 //! Project version number for CollapsableTableKit.
 FOUNDATION_EXPORT double CollapsableTableKitVersionNumber;
@@ -36,4 +36,4 @@ FOUNDATION_EXPORT const unsigned char CollapsableTableKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <CollapsableTableKit/PublicHeader.h>
 
-
+#import <CollapsableTableKit/RRNCollapsableTableViewController.h>
