@@ -4,7 +4,7 @@ Collapsable Table Kit
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-green.svg)](https://github.com/Carthage/Carthage)
 
 ##Description
-A table view comprised of x sections, all of which can collapse or expand like an accordion, when tapping the section header. The creative design and style of the table view and it's headers, are at the mercy of the implementing developer. Please contribute to pre-built table view designs [here](https://github.com/rob-nash/CollapsableOptions).
+A table view comprised of x sections, all of which can collapse or expand like an accordion, when tapping the section header. The creative design and style of the table view and it's headers, are at the mercy of the implementing developer. Please contribute to pre-built table view designs [here](https://github.com/rob-nash/CollapsableTableHeaders).
 
 ##Dependencies
 <sup>XCode 6.4+ iOS 8.0+</sup>
