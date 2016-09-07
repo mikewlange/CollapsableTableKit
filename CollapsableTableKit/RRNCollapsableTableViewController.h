@@ -44,15 +44,21 @@
 
 /*!
  * @discussion Override this method to return a custom model for the table view.
- * @return the model for the table view. Is nil unless overriden.
+ * @return the model for the table view.
  */
 -(NSArray <RRNCollapsableTableViewSectionModelProtocol> *)model;
 
 /*!
  * @discussion Override this method to return the nib name of your RRNTableViewHeaderFooterView subclass.
- * @return the section header nib name. Is nil unless overriden.
+ * @return the section header nib name.
  */
 -(NSString *)sectionHeaderNibName;
+
+/*!
+ * @discussion Override this method to return the bundle for your RRNTableViewHeaderFooterView subclass.
+ * @return the bundle for where the section header is located.
+ */
+-(NSBundle *)sectionHeaderNibBundle;
 
 /*!
  * @discussion Only one section is visible when the user taps to select a section. Deselecting an open section, closes all sections. By returning 'NO' for this value, then this rule is ignored.

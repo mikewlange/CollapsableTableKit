@@ -36,7 +36,7 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userTappedHeaderView:) name:RRN_CONSTANT_NOTIFICATION_USER_TAPPED_TABLE_VIEW_HEADER_VIEW object:nil];
     
-    UINib *nib = [UINib nibWithNibName:[self sectionHeaderNibName] bundle:nil];
+    UINib *nib = [UINib nibWithNibName:[self sectionHeaderNibName] bundle:[self sectionHeaderNibBundle]];
     [[self collapsableTableView] registerNib:nib forHeaderFooterViewReuseIdentifier:[self sectionHeaderReuseIdentifier]];
 }
 
@@ -54,6 +54,10 @@
 
 -(NSString *)sectionHeaderNibName {
     return nil;
+}
+
+-(NSBundle *)sectionHeaderNibBundle {
+    return  nil;
 }
 
 -(NSString *)sectionHeaderReuseIdentifier {
