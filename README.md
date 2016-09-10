@@ -21,8 +21,8 @@ github "rob-nash/CollapsableTableKit"
 2. Subclass RRNTableViewHeaderFooterView and override all of it's public methods. Create a nib for this subclass with the same filename.
 3. Subclass RRNCollapsableTableViewController and override all of it's public methods.
 
-Your RRNTableViewHeaderFooterView subclass would look something like this.
-
+<details>
+<summary>An example RRNTableViewHeaderFooterView subclass</summary>
 ```objective-c
 -(void)openAnimated:(BOOL)animated {
     
@@ -67,9 +67,10 @@ Your RRNTableViewHeaderFooterView subclass would look something like this.
     self.titleLabel.text = title;
 }
 ```
+</details>
 
-Your RRNCollapsableTableViewController subclass should look something like this.
-
+<details>
+<summary>An example RRNCollapsableTableViewController subclass</summary>
 ```objective-c
 -(UITableView *)collapsableTableView {
     return self.tableView;
@@ -110,6 +111,7 @@ Your RRNCollapsableTableViewController subclass should look something like this.
     return [tableView dequeueReusableCellWithIdentifier:@"Cell"];
 }
 ```
+</details>
 
 ## Demo
 See [CollapsableOptions](https://github.com/rob-nash/CollapsableOptions).
